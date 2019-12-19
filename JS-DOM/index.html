@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="pr"></p>
+<p id="dr"></p>
+<p id="p1">Hello there</p>
+<script type="text/javascript">
+    //access to <p>
+    document.getElementById("pr").innerHTML = "This is a paragraph";
+    //getting element by tag
+    var x = document.getElementsByTagName("p");
+    document.write("<br>"+x);
+
+    var z = document.getElementsByTagName("p")[1].innerHTML = "this is the second paragraph";
+    document.write("<br>"+z);
+
+    //changing style of an element
+    document.getElementById("p1").style.color ="blue";
+
+</script>
+
+</body>
+</html>

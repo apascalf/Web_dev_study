@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id="Demo">The Title</title>
+</head>
+<body>
+<div id="divone">
+    <p id="para1">Hello this is para 1</p>
+
+</div>
+<script type="text/javascript">
+    //access title by node
+    var myTitle=document.getElementById("Demo").firstChild.nodeValue;
+
+    //add an element with nodes
+    var para = document.createElement("p");
+    var paratextnode = document.createTextNode("This is the text for new para");
+    para.appendChild(paratextnode);
+    document.getElementById("divone").appendChild(para);
+    //deleting child
+    document.getElementById("divone").removeChild(para);
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        document.write("Hello World");
+  //    window.alert("Hi");
+        console.log("Output to the console/n");
+    //Object example
+        var person={name:'John', age: 25, job:'Doctor'};
+    //access to variable
+        document.write("<br>");
+        person.name ='asd';
+        document.writeln('\n'+person.name.toString());
+        document.write("<br>");
+        document.writeln('\n'+person.name.length);
+
+    //round() to nearest, floor() rounds down, ceil() rounds up
+        document.write("<br>");
+        document.write('\n'+Math.floor(3.7));
+
+    //Arrays
+        document.write("<br>");
+        var names=["John","Sam","Rob"];
+        //push inserts the parameter to the last position of the array
+        names.push("Chris");
+        document.write(names[3].toString());
+
+    //Arrays methods
+        //to string an array of strings
+        printarray(names);
+        //pop, pop the last element of the array
+        names.pop();
+        printarray(names);
+        //shift deletes the first element of the array
+        names.shift();
+        printarray(names);
+        //unshift inserts on the first position of the array
+        names.unshift("Tim");
+        printarray(names);
+        //delete
+        delete names[0];
+        printarray(names);
+
+        //concat
+        names.unshift("Tim");
+        var numbers=[1,2,3];
+        var new_array=names.concat(numbers);
+        printarray(new_array);
+        //function to practice array methods here
+        function printarray(x) {
+            document.write("<br>");
+            document.write("************");
+            document.write("<br>");
+            document.write(x.toString());
+        }
+        function printline(){
+            document.write("<br>*******");
+        }
+
+        //for syntax
+        for(counter = 0; counter<3; counter++)document.write("Hello world <br>");
+
+        //switch case
+        var grade="A";
+
+        switch(grade){
+            case "A":
+                document.write("<br>Nice");break;
+            case "B":
+                document.write("<br>Good");break;
+            case "C":
+                document.write("<br>Can do better");break;
+            default: document.write("<br>Invalid grade");break;
+        }
+
+        //regular expressions
+        printline();
+        var pat= /egg/i;
+        var x="I ate an egg";
+        var n= x.search(pat);
+        document.write("<br>"+n);
+        //how to replace
+        printline();
+        var n = x.replace(pat,"apple");
+        document.write("<br>"+n);
+
+        //exception handling
+        printline();
+        var a= 200;
+        var b= 0;
+        var c= a / b;
+        document.write("<br>"+c);
+        try{
+            if(b == 0) {
+                throw("Divide by zero error.");
+            }else{
+                var c= a / b;
+                document.write("<br>"+c);
+            }
+        }catch(e){
+      //      alert("Error: "+e);
+        }finally{  //code executed no matter what
+
+            document.write("<br>This will be executed no matter what");
+        }
+
+        //Hoisting
+        //you can declare a variable later but you have to init it before, not recommended
+        printline();
+        x = 10;
+        document.write("<br>"+x);
+        var x;
+        //HTML DOM (document object model)
+        document.write("<img src='https://www.w3schools.com/js/pic_htmltree.gif'>");
+    </script>
+</head>
+<body>
+
+</body>
+</html>

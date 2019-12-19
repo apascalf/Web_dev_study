@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Set</h2>
+
+<p>In this example we demonstrate a simple class definition and how to use it.</p>
+<p>(cannot have duplicate entries on a set)</p>
+<p id="demo"></p>
+
+<script>
+  var x = new Set();
+  x.add("Object1").add("Object2");
+  var val='';
+  for(item of x.values()){val+=item + ' ';}
+    document.getElementById("demo").innerHTML = val;
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--html property-->
+<!--<h1 onclick="this.innerHTML = 'You clicked here'">Click here</h1> -->
+    <button id="newButton">Click here</button>
+<script type="text/javascript">
+    function displayalert() {
+        alert("Button clicked");
+    }
+    //target.addEventListener(type, listener[, options]);
+    document.getElementById("newButton").addEventListener("click",displayalert);
+
+</script>
+
+</body>
+</html>
