@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+    <h1 v-if="gate" >Gate Open</h1>
+    <h1 v-else-if="!gate">Gate Close</h1>
+    <button v-on:click="gate=!gate">Open/Close</button>
+</div>
+
+<script type="text/javascript" src="index.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div id="app">
+{{students[1]}}
+    <p v-for="student in students">{{student}}</p>
+    <p v-for="player in players">{{player.name}} : {{player.score}}</p>
+</div>
+
+<script type="text/javascript" src="index.js"></script>
+</body>
+
+
+</html>
